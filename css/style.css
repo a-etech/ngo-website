@@ -1,0 +1,750 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* COLORS */
+
+:root{
+
+--primary:#2e7d32; 
+--accent:#ff9800;
+--light:#f4fdf4;
+--dark:#1b5e20;
+
+--shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+/* BODY */
+
+body{
+
+font-family:Segoe UI, sans-serif;
+line-height:1.7;
+color:#333;
+
+}
+
+/* CONTAINER */
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+/* NAVBAR */
+
+header{
+
+background:white;
+box-shadow:var(--shadow);
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+
+}
+
+.logo{
+
+font-size:1.4rem;
+font-weight:bold;
+color:var(--primary);
+
+}
+
+.nav-links{
+
+display:flex;
+list-style:none;
+
+}
+
+.nav-links li{
+
+margin-left:25px;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+color:#333;
+font-weight:500;
+
+}
+
+.hamburger{
+
+display:none;
+font-size:1.8rem;
+cursor:pointer;
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:90vh;
+
+display:flex;
+
+align-items:center;
+
+/* BACKGROUND IMAGE */
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+url("../images/hero-side.jpg")
+center center/cover no-repeat;
+
+color:white;
+
+}
+
+/* ⭐ NEW — HERO FLEX LAYOUT */
+
+.hero-flex{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+
+}
+
+/* HERO TEXT BOX */
+
+.hero-box{
+
+background:rgba(0,0,0,.55);
+
+padding:40px;
+
+border-radius:15px;
+
+max-width:600px;
+
+/* Makes text easier to read */
+
+backdrop-filter: blur(4px);
+
+}
+
+.hero h1{
+
+font-size:3rem;
+margin-bottom:15px;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+padding:14px 26px;
+margin-top:20px;
+
+background:var(--primary);
+color:white;
+
+text-decoration:none;
+
+border-radius:30px;
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+background:var(--dark);
+
+}
+
+/* SECTIONS */
+
+section{
+
+padding:80px 0;
+
+}
+
+.section-title{
+
+text-align:center;
+margin-bottom:40px;
+
+font-size:2rem;
+color:var(--primary);
+
+}
+
+.white{
+
+color:white;
+
+}
+
+/* CEO MODERN CARD */
+
+.ceo-card{
+
+display:flex;
+
+/* This moves image to the right */
+
+flex-direction:row-reverse;
+
+gap:40px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 12px 35px rgba(0,0,0,0.08);
+
+align-items:center;
+
+transition:.3s;
+
+}
+
+.ceo-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* CEO IMAGE */
+
+.ceo-image{
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--accent)
+);
+
+padding:6px;
+
+border-radius:18px;
+
+}
+
+.ceo-image img{
+
+width:260px;
+
+height:auto;
+
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+/* Makes image align cleanly */
+
+display:block;
+
+}
+
+/* CEO CONTENT */
+
+.ceo-content{
+
+flex:1;
+
+padding-right:10px;
+
+}
+
+.ceo-title{
+
+color:var(--primary);
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+}
+
+/* MESSAGE BOX */
+
+.ceo-message{
+
+background:var(--light);
+
+padding:28px;
+
+border-radius:15px;
+
+line-height:1.85;
+
+/* Better text readability */
+
+text-align:justify;
+
+font-size:1rem;
+
+color:#333;
+
+}
+
+/* SIGNATURE STYLE */
+
+.ceo-signature{
+
+margin-top:25px;
+
+}
+
+.ceo-name{
+
+font-size:1.4rem;
+
+font-family:'Playfair Display', serif;
+
+font-weight:600;
+
+color:var(--dark);
+
+letter-spacing:0.5px;
+
+margin-top:15px;
+
+}
+
+.ceo-role{
+
+font-size:.95rem;
+
+color:#666;
+
+margin-top:5px;
+
+}
+
+/* =========================
+IMPACT SECTION
+========================= */
+
+.impact{
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--dark)
+);
+
+color:white;
+
+padding:90px 0;
+
+text-align:center;
+
+}
+
+/* TITLE */
+
+.impact-title{
+
+font-size:2.2rem;
+
+letter-spacing:2px;
+
+margin-bottom:40px;
+
+font-weight:700;
+
+}
+
+/* GRID */
+
+.impact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4, 1fr);
+
+gap:25px;
+
+margin-top:20px;
+
+}
+
+/* CARD */
+
+.impact-card{
+
+background:white;
+
+color:#333;
+
+padding:35px 20px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+text-align:center;
+
+transition:0.3s;
+
+}
+
+/* HOVER EFFECT */
+
+.impact-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+
+}
+
+/* NUMBER */
+
+.impact-number{
+
+font-size:2.8rem;
+
+font-weight:800;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+/* TEXT */
+
+.impact-card p{
+
+font-size:1rem;
+
+color:#555;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.impact-grid{
+
+grid-template-columns:repeat(2, 1fr);
+
+}
+
+}
+
+@media(max-width:500px){
+
+.impact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:var(--dark);
+color:white;
+
+text-align:center;
+padding:40px;
+
+}
+
+.copyright{
+
+margin-top:10px;
+font-size:.9rem;
+
+}
+
+/* SOFT BACKGROUND */
+
+.soft-bg{
+
+background:linear-gradient(
+135deg,
+#f4fdf4,
+white
+);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+flex-direction:column;
+
+position:absolute;
+
+right:0;
+top:70px;
+
+background:white;
+
+width:220px;
+padding:20px;
+
+box-shadow:var(--shadow);
+
+}
+
+.nav-links.show{
+
+display:flex;
+
+}
+
+.hamburger{
+
+display:block;
+
+}
+
+/* CEO STACK */
+
+.ceo{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+/* ⭐ HERO MOBILE FIX */
+
+.hero-flex{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:100%;
+max-width:350px;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+}
+
+/* =========================
+MISSION MODERN CARDS
+========================= */
+
+.mission-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+margin-top:20px;
+
+}
+
+/* CARD DESIGN */
+
+.mission-card{
+
+background:white;
+
+padding:35px 25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+text-align:center;
+
+transition:all 0.3s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* HOVER EFFECT */
+
+.mission-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+/* ICON STYLE */
+
+.icon{
+
+font-size:2.5rem;
+
+margin-bottom:15px;
+
+}
+
+/* TITLE */
+
+.mission-card h3{
+
+color:var(--primary);
+
+margin-bottom:12px;
+
+font-size:1.2rem;
+
+}
+
+/* TEXT */
+
+.mission-card p{
+
+color:#555;
+
+line-height:1.7;
+
+font-size:0.95rem;
+
+}
+
+/* TOP ACCENT BAR */
+
+.mission-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:linear-gradient(
+90deg,
+var(--primary),
+var(--accent)
+);
+
+}
+
+@media(max-width:768px){
+
+.ceo-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.ceo-content{
+
+padding-right:0;
+
+}
+
+.ceo-image img{
+
+width:200px;
+
+margin:auto;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.impact-grid{
+
+grid-template-columns:repeat(2, 1fr);
+
+}
+
+}
+
+@media(max-width:500px){
+
+.impact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* =========================
+IMPACT ICONS
+========================= */
+
+.impact-icon{
+
+font-size:2.2rem;
+
+margin-bottom:15px;
+
+color:var(--accent);
+
+}
+
+/* Icon hover animation */
+
+.impact-card:hover .impact-icon{
+
+transform:scale(1.15);
+
+transition:0.3s;
+
+}
