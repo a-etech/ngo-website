@@ -296,6 +296,8 @@ margin-bottom:20px;
 
 .ceo-message{
 
+max-width:650px;
+  
 background:white;
 
 padding:35px 40px;
@@ -756,5 +758,55 @@ color:var(--accent);
 transform:scale(1.15);
 
 transition:0.3s;
+
+}
+
+/* =========================
+CEO MOBILE IMPROVEMENTS
+========================= */
+
+@media(max-width:768px){
+
+.ceo-message{
+
+padding:25px 22px;
+
+}
+
+.ceo-message p{
+
+text-align:left;   /* Fix ugly justification gaps */
+
+font-size:0.98rem;
+
+line-height:1.8;
+
+margin-bottom:18px;
+
+}
+
+/* Improve section layout */
+
+.ceo{
+
+flex-direction:column-reverse;
+
+text-align:left;
+
+gap:25px;
+
+}
+
+/* Better CEO image sizing */
+
+.ceo img{
+
+width:100%;
+
+max-width:280px;
+
+margin:auto;
+
+}
 
 }
