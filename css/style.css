@@ -296,21 +296,31 @@ margin-bottom:20px;
 
 .ceo-message{
 
-background:var(--light);
+background:white;
 
-padding:28px;
+padding:35px 40px;
 
-border-radius:15px;
+border-radius:18px;
 
-line-height:1.85;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 
-/* Better text readability */
+border-left:5px solid var(--primary);
 
-text-align:justify;
+}
+
+/* Paragraph spacing */
+
+.ceo-message p{
+
+margin-bottom:22px;
+
+line-height:1.9;
 
 font-size:1rem;
 
-color:#333;
+color:#444;
+
+text-align:justify;
 
 }
 
